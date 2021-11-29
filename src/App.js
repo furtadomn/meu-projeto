@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = "Marcella";
+  const newName = name.toUpperCase();
+
+  function age(currentYear, birthYear) {
+    return currentYear - birthYear;
+  }
+
+  const url = "https://via.placeholder.com/150"
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Olá, React!</h1>
+      <p>Meu primeiro App</p>
+      <p>Nome: {newName}</p>
+      <p>Idade: {age(2021, 1993)}</p>
+      <img src={url} alt="Minha Imagem"/>
     </div>
   );
 }
