@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
   const name = "Marcella";
@@ -17,6 +18,7 @@ function App() {
       <p>Nome: {newName}</p>
       <p>Idade: {age(2021, 1993)}</p>
       <img src={url} alt="Minha Imagem"/>
+      < HelloWorld />
     </div>
   );
 }
